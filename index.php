@@ -41,8 +41,7 @@
                                 function mostrarProducto($id, $producto) {
                                     echo "<li class='my-2 fst-italic fw-bold'>" . $producto["nombre"] . ": ₡" . number_format($producto["precio"], 2) . 
                                       " <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>";
-                                  }
-                                  
+                                  }  
                             ?>
                            
                             <ul id="carrito">
