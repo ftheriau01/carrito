@@ -38,22 +38,24 @@
                         <ul class="list-group mx-5">
                             <?php
                                 // Mostrar los productos disponibles con un botón para agregarlos al carrito
-                                foreach ($productos as $id => $producto) {
+                                function mostrarProducto($id, $producto) {
                                     echo "<li class='my-2 fst-italic fw-bold'>" . $producto["nombre"] . ": ₡" . number_format($producto["precio"], 2) . 
-                                        " <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>";
-                                }
+                                      " <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>";
+                                  }
+                                  
                             ?>
-                            </ul>
-                                <h1 class="fw-bolder my-2 text-primary mx-auto">Productos en el carrito</h1>
-                            <ul>
+                           
                             <ul id="carrito">
                                 <?php
                                     // Mostrar los productos en el carrito con su nombre y precio
-                                    foreach ($carrito as $producto) {
-                                        echo "<li class='my-2 fst-italic fw-bold'>" . $producto["nombre"] . ": ₡" . number_format($producto["precio"], 2) . "</li>";
-                                    }
+                                    foreach ($productos as $id => $producto) {
+                                        mostrarProducto($id, $producto);
+                                      }
+                                      
                                 ?> 
+                                 <h1 class="fw-bolder my-2 text-primary mx-auto">Productos en el carrito</h1>
                             </ul>
+                            
                             <div class="row my-3">
                                 <form class="form" method="post">
                                     <div class="col-md-10 mb-3">
