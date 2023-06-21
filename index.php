@@ -59,15 +59,15 @@
                                 <form class="form" method="post">
                                     <div class="col-md-10 mb-3">
                                         <label class="form-label fst-italic fw-bolder" for="nombre">Nombre:</label>
-                                        <input class="form-control" type="text" name="nombre" id="nombre" required>
+                                        <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Jose Ramirez Lopez" required pattern="[A-Za-z\s]+">
                                     </div>
                                     <div class="col-md-10 mb-3">
                                         <label class="form-label fst-italic fw-bolder" for="correo">Correo:</label>
-                                        <input class="form-control" type="email" name="correo" id="correo" required>
+                                        <input class="form-control" type="email" name="correo" id="correo" placeholder="sun correo@email.com" required>
                                     </div>
                                     <div class="col-md-10 mb-3">
                                         <label class="form-label fst-italic fw-bolder" for="telefono">Teléfono:</label>
-                                        <input class="form-control" type="tel" name="telefono" id="telefono" required>
+                                        <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="1234-5678" required pattern="[0-9]{4}-[0-9]{4}">
                                     </div>
                                     <input class="btn btn-warning fw-bolder" type="submit" name="finalizar" value="Finalizar compra">
                                 </form>

@@ -1,5 +1,3 @@
-
-
 function agregarProducto(id) {
     // Crear un objeto FormData con el id del producto
     let formData = new FormData();
@@ -33,3 +31,4 @@ function agregarProducto(id) {
       });
   }
   
+   
