@@ -8,3 +8,19 @@ Nombre: Franklin
 Correo: ftheriau01@gmail.com
 Teléfono: 2233-4455
 
+Nombre: Franklin 
+Correo: ftheriau01@gmail.com
+Teléfono: 2233-4455
+
+Nombre: jose lopoz
+Correo: naboy25230@byorby.com
+Teléfono: 3344-5566
+
+Nombre: jose lopoz
+Correo: naboy25230@byorby.com
+Teléfono: 3344-5566
+
+Nombre: Franklin 
+Correo: ftheriau01@gmail.com
+Teléfono: 7108-4442
+
