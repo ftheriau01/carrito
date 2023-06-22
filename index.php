@@ -63,7 +63,7 @@
                                     </div>
                                     <div class="col-md-10 mb-3">
                                         <label class="form-label fst-italic fw-bolder" for="correo">Correo:</label>
-                                        <input class="form-control" type="email" name="correo" id="correo" placeholder="sun correo@email.com" required>
+                                        <input class="form-control" type="email" name="correo" id="correo" placeholder="correo@email.com" required>
                                     </div>
                                     <div class="col-md-10 mb-3">
                                         <label class="form-label fst-italic fw-bolder" for="telefono">Teléfono:</label>
