@@ -36,14 +36,19 @@
                     </div>
                     <div class="card card-body">
                         <ul class="list-group mx-5">
-                            <?php
-                                // Mostrar los productos disponibles con un botón para agregarlos al carrito
-                                function mostrarProducto($id, $producto) {
-                                    echo "<li class='my-2 fst-italic fw-bold'>" . $producto["nombre"] . ": ₡" . number_format($producto["precio"], 2) . 
-                                      " <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>";
-                                  }  
-                            ?>
                            
+                            <?php
+                            function mostrarProducto($id, $producto) {
+                           echo "<div class='card' style='width: 18rem;'>
+                               
+                                <div class='card-body>
+                                    <h5 class='card-title'><? ".$producto["nombre"]." ?></h5>
+                                    <p class='card-text'><? . $producto["precio"] ?> </p>
+                                    <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>
+                            </div>
+                            
+                            </div>";}
+                            ?>
                             <ul id="carrito">
                                 <?php
                                     // Mostrar los productos en el carrito con su nombre y precio
