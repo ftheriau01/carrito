@@ -1,15 +1,15 @@
 <?php
     $productos = array(
-        "1" => array("nombre" => "Camiseta", "precio" => 15.99),
-        "2" => array("nombre" => "Pantalón", "precio" => 25.99),
-        "3" => array("nombre" => "Zapatos", "precio" => 35.99),
-        "4" => array("nombre" => "Gorra", "precio" => 10.99),
-        "5" => array("nombre" => "Reloj", "precio" => 20.99),
-        "6" => array("nombre" => "Mochila", "precio" => 30.99),
-        "7" => array("nombre" => "Libro", "precio" => 12.99),
-        "8" => array("nombre" => "Lápiz", "precio" => 0.99),
-        "9" => array("nombre" => "Cuaderno", "precio" => 2.99),
-        "10" => array("nombre" => "Calculadora", "precio" => 15.99)
+        "1" => array("nombre" => "Camiseta", "precio" => 15.99,"img" =>"./img/camiseta.jpg"),
+        "2" => array("nombre" => "Pantalón", "precio" => 25.99,"img" =>"./img/pantalon.jpg"),
+        "3" => array("nombre" => "Zapatos", "precio" => 35.99,"img" =>"./img/zapatos.jpg"),
+        "4" => array("nombre" => "Gorra", "precio" => 10.99,"img" =>"./img/Gorra.jpg"),
+        "5" => array("nombre" => "Reloj", "precio" => 20.99,"img" =>"./img/Reloj.jpg"),
+        "6" => array("nombre" => "Mochila", "precio" => 30.99,"img" =>"./img/Mochila.jpg"),
+        "7" => array("nombre" => "Libro", "precio" => 12.99,"img" =>"./img/Libro.jpg"),
+        "8" => array("nombre" => "Lápiz", "precio" => 0.99,"img" =>"./img/Lápiz.jpg"),
+        "9" => array("nombre" => "Cuaderno", "precio" => 2.99,"img" =>"./img/Cuaderno.jpg"),
+        "10" => array("nombre" => "Calculadora", "precio" => 15.99,"img" =>"./img/Calculadora.jpg")
     );
 
     if (isset($_SESSION["carrito"])) {

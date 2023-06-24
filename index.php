@@ -39,15 +39,14 @@
                            
                             <?php
                             function mostrarProducto($id, $producto) {
-                           echo "<div class='card' style='width: 18rem;'>
-                               
-                                <div class='card-body>
-                                    <h5 class='card-title'><? ".$producto["nombre"]." ?></h5>
-                                    <p class='card-text'><? . $producto["precio"] ?> </p>
-                                    <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>
-                            </div>
-                            
-                            </div>";}
+                             echo "<div class='card' style='width: 18rem;'>
+                                    <img src='".$producto["img"]."' class='card-img-top' alt=''>
+                                        <div class='card-body>
+                                            <h5 class='card-title'>" . $producto["nombre"] . "</h5>
+                                            <p class='card-text'>" . $producto["precio"] . "</p>
+                                            <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>
+                                        </div>
+                                    </div>";}
                             ?>
                             <ul id="carrito">
                                 <?php
