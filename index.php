@@ -28,15 +28,17 @@
     </div>  
     <div class="container my-3">
         <div class="row">
-            <div clas="col-md-10">
+            <div clas="col-md-12">
                 <div clas="card">
                     <div class="card card-header">
                         <h1 class="fw-bolder text-primary my-2 text-center">Productos disponibles</h1>
                     </div>
                 </div>    
-            </div>         
+            </div> 
         </div>            
-                    <div class="card card-body">
+        <div class="row">            
+            <div class="col-md-12">
+                <div class="card card-body">
                         <div class="row"> 
                             <?php
                             function mostrarProducto($id, $producto) {
@@ -86,8 +88,7 @@
                             </div>
                         </ul>
                     </div>
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
