@@ -10,9 +10,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.12/sweetalert2.min.js" integrity="sha512-JbRQ4jMeFl9Iem8w6WYJDcWQYNCEHP/LpOA11LaqnbJgDV6Y8oNB9Fx5Ekc5O37SwhgnNJdmnasdwiEdvMjW2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- SweetAlert2 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- personalizado -->
@@ -34,20 +33,29 @@
                     <div class="card card-header">
                         <h1 class="fw-bolder text-primary my-2 text-center">Productos disponibles</h1>
                     </div>
+                </div>    
+            </div>         
+        </div>            
                     <div class="card card-body">
-                        <ul class="list-group mx-5">
-                           
+                        <div class="row"> 
                             <?php
                             function mostrarProducto($id, $producto) {
-                             echo "<div class='card' style='width: 18rem;'>
-                                    <img src='".$producto["img"]."' class='card-img-top' alt=''>
+                             echo "
+                             <div class='row'> 
+                                <div class='col-md-3'>
+                                    <div class='card my-3' style='width: 20rem;'>
+                                        <img src='".$producto["img"]."' class='card-img-top' alt=''>
                                         <div class='card-body>
                                             <h5 class='card-title'>" . $producto["nombre"] . "</h5>
                                             <p class='card-text'>" . $producto["precio"] . "</p>
-                                            <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button></li>
+                                            <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button>
                                         </div>
-                                    </div>";}
+                                    </div>   
+                                </div>  
+                            </div> 
+                            ";}
                             ?>
+                        </div>  
                             <ul id="carrito">
                                 <?php
                                     // Mostrar los productos en el carrito con su nombre y precio
