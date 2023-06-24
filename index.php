@@ -54,7 +54,7 @@
         </div>
         <div class="row">
             <div class=" col-md-12">
-            <ul id="carrito">
+                <ul id="carrito">
                     <?php
                         // Mostrar los productos en el carrito con su nombre y precio
                         foreach ($productos as $id => $producto) {
@@ -71,7 +71,7 @@
                 <h1 class="fw-bolder my-2 text-primary mx-auto">Formulario de compras</h1>
             </div>
         </div>       
-        <div class="row">
+        <div class="row my-3">
             <div class="col-md-12">
                 <form class="form mx-auto" method="post">
                     <div class="col-md-10 mb-3">
