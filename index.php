@@ -32,22 +32,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-5">
                 <?php
                 function mostrarProducto($id, $producto) {
                     echo "
-                    <div class='row'> 
-                        <div class='col-md-3'>
-                            <div class='card my-3' style='width: 20rem;'>
+                    
+                            <div class='card my-3' style='width: 25rem;'>
                                 <img src='".$producto["img"]."' class='card-img-top' alt=''>
                                 <div class='card-body>
                                     <h5 class='card-title'>" . $producto["nombre"] . "</h5>
-                                    <p class='card-text'>" . $producto["precio"] . "</p>
+                                    <p class='card-text fs-2'>" . $producto["precio"] . "</p>
                                     <button class='btn btn-success btn-sm' onclick='agregarProducto($id)'>Agregar al carrito</button>
                                 </div>
                             </div>   
-                        </div>  
-                    </div> 
+                      
                     ";}
                 ?>
             </div>
